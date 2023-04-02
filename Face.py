@@ -11,9 +11,11 @@ classNames = []
 myList = os.listdir(path)
 print(myList)
 for cl in myList:
-    curImg = cv2.imread(f'{path}/{cl}')
-    images.append(curImg)
-    classNames.append(os.path.splitext(cl)[0])
+    if cl[len(cl) - 3:] == 'jpg':
+        curImg = cv2.imread(f'{path}/{cl}')
+        print(cl)
+        images.append(curImg)
+        classNames.append(os.path.splitext(cl)[0])
 
 def findEncodings(images):
     encodeList = []
