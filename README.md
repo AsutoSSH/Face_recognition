@@ -1,5 +1,5 @@
 # Face_recognition
-Recognizes and matches faces with only a photo as input.
+Recognizes and matches faces in real time.
 
 Uses a pre trained model ([face_recognition](https://github.com/ageitgey/face_recognition)) to identify and match faces according to given datasets in form of jpg files.
 
